@@ -1,5 +1,5 @@
 /* ==============================
-MEHAFIL-E-MURTAZVI
+MEHFIL-E-MURTAZVI
 Professional Islamic Heritage
 ============================== */
 
@@ -136,7 +136,7 @@ isolation: isolate;
 background-color: var(--deep-green);
 
 /* Show the complete image without cropping */
-background-image: url("./hero-mehafil.jpg");
+background-image: url("./hero-mehfil.jpg");
 background-position: center center;
 background-size: contain;
 background-repeat: no-repeat;
