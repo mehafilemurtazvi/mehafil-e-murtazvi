@@ -371,109 +371,345 @@ a {
         padding-bottom: 20px;
         flex-direction: column;
         gap: 18px;
-    }
+*{margin:0;padding:0;box-sizing:border-box}
 
-    .navigation {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 14px 22px;
-    }
-
-    .hero {
-        min-height: 650px;
-        background-position: 60% center;
-    }
-
-    .hero-overlay {
-        background: linear-gradient(
-            90deg,
-            rgba(3, 32, 27, 0.93),
-            rgba(3, 36, 30, 0.65)
-        );
-    }
-
-    .hero-content {
-        padding-top: 65px;
-        padding-bottom: 75px;
-    }
+:root{
+--green:#063f32;
+--dark-green:#032c24;
+--gold:#c9a44c;
+--cream:#f8f4e9;
+--white:#ffffff;
+--text:#333333;
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
+html{
+scroll-behavior:smooth;
+}
 
-    .navbar {
-        align-items: flex-start;
-    }
+body{
+font-family:Georgia,"Times New Roman",serif;
+background:var(--cream);
+color:var(--text);
+line-height:1.7;
+}
 
-    .brand-name strong {
-        font-size: 15px;
-    }
+a{
+text-decoration:none;
+color:inherit;
+}
 
-    .navigation {
-        width: 100%;
-        justify-content: flex-start;
-        gap: 12px 18px;
-        font-size: 12px;
-    }
+img{
+max-width:100%;
+display:block;
+}
 
-    .navigation .nav-contact {
-        padding: 5px 10px;
-    }
+/* HEADER */
 
-    .hero {
-        min-height: 650px;
-        background-position: 58% center;
-    }
+header{
+width:100%;
+background:var(--dark-green);
+color:var(--white);
+padding:18px 7%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+border-bottom:2px solid var(--gold);
+}
 
-    .hero-content {
-        padding-top: 60px;
-        padding-bottom: 65px;
-    }
+.logo{
+color:var(--gold);
+font-size:25px;
+font-weight:bold;
+line-height:1.3;
+}
 
-    .eyebrow {
-        font-size: 9px;
-        letter-spacing: 2px;
-    }
+nav{
+display:flex;
+align-items:center;
+gap:24px;
+flex-wrap:wrap;
+}
 
-    .hero h1 {
-        font-size: clamp(37px, 10vw, 51px);
-        letter-spacing: -0.8px;
-        overflow-wrap: anywhere;
-    }
+nav a{
+color:var(--white);
+font-size:15px;
+transition:color .3s ease;
+}
 
-    .hero h1 span {
-        font-size: 29px;
-    }
+nav a:hover{
+color:var(--gold);
+}
 
-    .hero-description {
-        font-size: 14px;
-        line-height: 1.8;
-    }
+/* HERO SECTION */
 
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
-        max-width: 310px;
-    }
+.hero{
+min-height:590px;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:80px 7%;
+color:var(--white);
+background-color:var(--dark-green);
+background-image:
+linear-gradient(
+rgba(3,25,20,.70),
+rgba(3,25,20,.78)
+),
+url("./hero-mehafil.jpg");
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
 
-    .hero-established {
-        margin-top: 35px;
-    }
+.hero-content{
+width:100%;
+max-width:900px;
+position:relative;
+z-index:1;
+}
 
-    .intro-section,
-    .history-section,
-    .activities-section {
-        padding: 65px 0;
-    }
+.hero h1{
+color:var(--gold);
+font-size:clamp(36px,5vw,62px);
+line-height:1.2;
+margin-bottom:22px;
+}
 
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.hero p{
+max-width:760px;
+margin:0 auto 30px;
+font-size:19px;
+line-height:1.9;
+}
 
-    .copyright {
-        text-align: left;
-    }
+.hero .btn{
+display:inline-block;
+background:var(--gold);
+color:var(--dark-green);
+padding:13px 30px;
+font-weight:bold;
+border:1px solid var(--gold);
+transition:all .3s ease;
+}
+
+.hero .btn:hover{
+background:transparent;
+color:var(--gold);
+}
+
+/* GENERAL SECTIONS */
+
+section{
+padding:75px 7%;
+}
+
+.section-title{
+text-align:center;
+color:var(--green);
+font-size:clamp(28px,4vw,40px);
+margin-bottom:18px;
+}
+
+.section-subtitle{
+max-width:760px;
+margin:0 auto 40px;
+text-align:center;
+color:#666666;
+font-size:17px;
+}
+
+.gold-line{
+width:80px;
+height:3px;
+background:var(--gold);
+margin:18px auto 28px;
+}
+
+/* INTRODUCTION */
+
+.intro{
+background:var(--cream);
+text-align:center;
+}
+
+.intro-content{
+max-width:900px;
+margin:0 auto;
+}
+
+.intro p{
+font-size:18px;
+margin-bottom:18px;
+}
+
+/* HISTORY */
+
+.history{
+background:#ffffff;
+}
+
+.history-content{
+max-width:900px;
+margin:0 auto;
+}
+
+.history-content p{
+font-size:17px;
+margin-bottom:20px;
+}
+
+/* ACTIVITIES */
+
+.activities{
+background:#f0eadb;
+}
+
+.activity-grid{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:25px;
+margin-top:35px;
+}
+
+.activity-card{
+background:#ffffff;
+padding:30px 25px;
+text-align:center;
+border-bottom:4px solid var(--gold);
+box-shadow:0 5px 18px rgba(0,0,0,.06);
+transition:transform .3s ease;
+}
+
+.activity-card:hover{
+transform:translateY(-5px);
+}
+
+.activity-card h3{
+color:var(--green);
+font-size:22px;
+margin-bottom:12px;
+}
+
+.activity-card p{
+font-size:16px;
+}
+
+/* QUOTE / MESSAGE */
+
+.message{
+background:var(--green);
+color:var(--white);
+text-align:center;
+}
+
+.message blockquote{
+max-width:850px;
+margin:0 auto;
+font-size:clamp(22px,3vw,30px);
+line-height:1.7;
+font-style:italic;
+}
+
+.message p{
+color:var(--gold);
+margin-top:20px;
+font-size:16px;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--dark-green);
+color:var(--white);
+text-align:center;
+padding:30px 7%;
+border-top:2px solid var(--gold);
+}
+
+footer p{
+margin:5px 0;
+font-size:14px;
+}
+
+footer a{
+color:var(--gold);
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+/* TABLETS */
+
+@media(max-width:900px){
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+justify-content:center;
+gap:15px;
+}
+
+.hero{
+min-height:500px;
+}
+
+.activity-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+}
+
+/* MOBILE PHONES */
+
+@media(max-width:600px){
+header{
+padding:18px 5%;
+}
+
+.logo{
+font-size:22px;
+}
+
+nav{
+gap:10px 16px;
+}
+
+nav a{
+font-size:14px;
+}
+
+.hero{
+min-height:460px;
+padding:65px 6%;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:55px 6%;
+}
+
+.intro p,
+.history-content p{
+font-size:16px;
+}
+
+.activity-grid{
+grid-template-columns:1fr;
+}
+
+.activity-card{
+padding:25px 20px;
+}
 }
