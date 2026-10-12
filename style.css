@@ -134,13 +134,17 @@ align-items: center;
 overflow: hidden;
 isolation: isolate;
 background-color: var(--deep-green);
+}
 
-/* Show the complete image without cropping */
-background-image: url("./hero-mehfil.jpg");
-background-position: center center;
-background-size: contain;
-background-repeat: no-repeat;
-
+.hero-image {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+max-width: none;
+object-fit: contain;
+object-position: center center;
+z-index: -2;
 }
 
 .hero-overlay {
@@ -292,7 +296,7 @@ var(--deep-green)
 );
 }
 
-/* SHARED CONTENT SECTIONS */
+/* CONTENT SECTIONS */
 
 .intro-section,
 .history-section,
@@ -384,6 +388,7 @@ flex-direction: column;
 gap: 18px;
 }
 
+```
 .navigation {
     justify-content: center;
     flex-wrap: wrap;
@@ -392,7 +397,6 @@ gap: 18px;
 
 .hero {
     min-height: 620px;
-    background-size: contain;
 }
 
 .hero-content {
@@ -412,6 +416,7 @@ gap: 18px;
 .copyright {
     text-align: center;
 }
+```
 
 }
 
@@ -422,6 +427,7 @@ gap: 18px;
 width: 90%;
 }
 
+```
 .brand-mark {
     width: 42px;
     height: 42px;
@@ -449,8 +455,10 @@ width: 90%;
 .hero {
     min-height: 650px;
     align-items: flex-start;
-    background-position: center center;
-    background-size: contain;
+}
+
+.hero-image {
+    object-position: center center;
 }
 
 .hero-overlay {
@@ -521,20 +529,23 @@ width: 90%;
 .site-footer {
     padding: 30px 0;
 }
+```
 
 }
 
-/* REDUCED MOTION ACCESSIBILITY */
+/* REDUCED MOTION */
 
 @media (prefers-reduced-motion: reduce) {
 html {
 scroll-behavior: auto;
 }
 
+```
 *,
 *::before,
 *::after {
     transition-duration: 0.01ms !important;
 }
+```
 
 }
