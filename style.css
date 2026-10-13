@@ -1029,3 +1029,50 @@ scroll-behavior: auto;
   }
 }
 
+/* Header Logo */
+.brand-logo {
+    display: block;
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.brand-name strong {
+    font-size: 1rem;
+}
+
+.brand-name small {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+    .brand-logo {
+        width: 46px;
+        height: 46px;
+    }
+
+    .brand {
+        gap: 8px;
+    }
+
+    .brand-name strong {
+        font-size: 0.9rem;
+    }
+}
+
