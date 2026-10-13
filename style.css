@@ -1076,3 +1076,64 @@ scroll-behavior: auto;
     }
 }
 
+/* Respected Personalities Gallery */
+.personalities-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+    align-items: stretch;
+}
+
+.personality-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e6dfd0;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.personality-card img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.personality-card h3 {
+    margin: 0;
+    padding: 15px 8px;
+    color: #174b37;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .personalities-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .personalities-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .personality-card img {
+        height: 190px;
+    }
+
+    .personality-card h3 {
+        padding: 12px 5px;
+        font-size: 14px;
+    }
+}
+
+
