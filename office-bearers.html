@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Current Office Bearers | Mehfil-e-Murtazvi</title>
+
+    <meta
+        name="description"
+        content="Meet the newly elected body of Mehfil-e-Murtazvi, Nindo Shaher, for 1448 and 1449 AH."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .office-bearers-section {
+            padding: 70px 20px 80px;
+        }
+
+        .office-bearers-heading {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 45px;
+        }
+
+        .office-bearers-heading .eyebrow {
+            color: #b58b36;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        .office-bearers-heading h1 {
+            margin: 12px 0;
+            font-size: clamp(30px, 5vw, 46px);
+        }
+
+        .office-bearers-heading p {
+            line-height: 1.8;
+        }
+
+        .office-bearers-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 24px;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .office-bearer-card {
+            min-width: 0;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #e8dfcc;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .office-bearer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .office-bearer-card img {
+            display: block;
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            object-position: center;
+            background: #f4f0e7;
+        }
+
+        .office-bearer-info {
+            padding: 20px 12px 24px;
+        }
+
+        .office-bearer-info h2 {
+            margin: 0 0 9px;
+            color: #174b37;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .office-bearer-info p {
+            margin: 0;
+            color: #a27b2c;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        .office-bearers-note {
+            max-width: 760px;
+            margin: 40px auto 0;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 950px) {
+            .office-bearers-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .office-bearers-section {
+                padding: 45px 14px 55px;
+            }
+
+            .office-bearers-grid {
+                gap: 14px;
+            }
+
+            .office-bearer-card {
+                border-radius: 10px;
+            }
+
+            .office-bearer-card img {
+                height: 190px;
+            }
+
+            .office-bearer-info {
+                padding: 14px 7px 18px;
+            }
+
+            .office-bearer-info h2 {
+                font-size: 14px;
+            }
+
+            .office-bearer-info p {
+                font-size: 11px;
+                letter-spacing: 0.5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html#home" class="brand">
+                <img
+                    src="mehfil-e-murtazvi-logo.jpg"
+                    alt="Mehfil-e-Murtazvi Logo"
+                    class="brand-logo"
+                >
+
+                <span class="brand-name">
+                    <strong>Mehfil-e-Murtazvi</strong>
+                    <small>Nindo Shaher</small>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="office-bearers.html" aria-current="page">
+                    Office Bearers
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="office-bearers-section">
+
+            <div class="office-bearers-heading">
+
+                <p class="eyebrow">Leadership & Service</p>
+
+                <h1>Current Office Bearers</h1>
+
+                <p>
+                    Meet the newly elected body of Mehfil-e-Murtazvi,
+                    Nindo Shaher, for the years 1448 and 1449 AH.
+                </p>
+
+            </div>
+
+            <!-- Office Bearers Gallery -->
+            <div class="office-bearers-grid">
+
+                <article class="office-bearer-card">
+                    <img
+                        src="president-sohail-abbas-khuwaja.jpg"
+                        alt="Sohail Abbas Khuwaja, President"
+                        loading="lazy"
+                    >
+                    <div class="office-bearer-info">
+                        <h2>Sohail Abbas Khuwaja</h2>
+                        <p>President</p>
+                    </div>
+                </article>
+
+                <article class="office-bearer-card">
+                    <img
+                        src="general-secretary-musayab-raza-khuwaja.jpg"
+                        alt="Musayab Raza Khuwaja, General Secretary"
+                        loading="lazy"
+                    >
+                    <div class="office-bearer-info">
+                        <h2>Musayab Raza Khuwaja</h2>
+                        <p>General Secretary</p>
+                    </div>
+                </article>
+
+                <article class="office-bearer-card">
+                    <img
+                        src="vice-president-ali-raza.jpg"
+                        alt="Ali Raza, Vice President"
+                        loading="lazy"
+                    >
+                    <div class="office-bearer-info">
+                        <h2>Ali Raza</h2>
+                        <p>Vice President</p>
+                    </div>
+                </article>
+
+                <article class="office-bearer-card">
+                    <img
+                        src="joint-secretary-fazal-chandio.jpg"
+                        alt="Fazal Chandio, Joint Secretary"
+                        loading="lazy"
+                    >
+                    <div class="office-bearer-info">
+                        <h2>Fazal Chandio</h2>
+                        <p>Joint Secretary</p>
+                    </div>
+                </article>
+
+                <article class="office-bearer-card">
+                    <img
+                        src="finance-secretary-sohail-abbas-bhurgri.jpg"
+                        alt="Sohail Abbas Bhurgri, Finance Secretary"
+                        loading="lazy"
+                    >
+                    <div class="office-bearer-info">
+                        <h2>Sohail Abbas Bhurgri</h2>
+                        <p>Finance Secretary</p>
+                    </div>
+                </article>
+
+                <article class="office-bearer-card">
+                    <img
+                        src="publication-secretary-safeer-hassan.jpg"
+                        alt="Safeer Hassan, Publication Secretary"
+                        loading="lazy"
+                    >
+                    <div class="office-bearer-info">
+                        <h2>Safeer Hassan</h2>
+                        <p>Publication Secretary</p>
+                    </div>
+                </article>
+
+                <article class="office-bearer-card">
+                    <img
+                        src="auditor-barkat-ali-jafri.jpg"
+                        alt="Barkat Ali Jafri, Auditor"
+                        loading="lazy"
+                    >
+                    <div class="office-bearer-info">
+                        <h2>Barkat Ali Jafri</h2>
+                        <p>Auditor</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="office-bearers-note">
+                We extend our best wishes to the newly elected body
+                and appreciate their commitment to the traditions,
+                unity and continued service of Mehfil-e-Murtazvi.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                &copy; 2026 Mehfil-e-Murtazvi, Nindo Shaher.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
