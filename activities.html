@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,7 @@
 
     <meta
         name="description"
-        content="Explore the religious gatherings, commemorations, and community activities of Mehfil-e-Murtazvi, Nindo Shaher, Sindh, Pakistan."
+        content="Explore the religious gatherings, Milad programs, student competitions, sports events, and community activities of Mehfil-e-Murtazvi, Nindo Shaher, Sindh, Pakistan."
     >
 
     <title>Our Activities | Mehfil-e-Murtazvi</title>
@@ -67,11 +66,30 @@
         }
 
         .activity-card {
+            display: block;
             padding: 30px;
             background: #ffffff;
             border: 1px solid #e6ddc9;
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            text-decoration: none;
+            color: inherit;
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .activity-card:hover,
+        .activity-card:focus-visible {
+            transform: translateY(-5px);
+            border-color: #d9b96e;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+        }
+
+        .activity-card:focus-visible {
+            outline: 3px solid #a27b2c;
+            outline-offset: 4px;
         }
 
         .activity-number {
@@ -91,9 +109,21 @@
         }
 
         .activity-card p {
-            margin: 0;
+            margin: 0 0 20px;
             line-height: 1.9;
             color: #555555;
+        }
+
+        .activity-card-link {
+            display: inline-block;
+            color: #174b37;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .activity-card-link span {
+            color: #a27b2c;
+            margin-left: 5px;
         }
 
         .activities-note {
@@ -168,48 +198,50 @@
 
         <!-- Activities Page Introduction -->
         <section class="activities-page-hero">
-
             <div class="container">
 
-                <p class="section-label">FAITH IN PRACTICE</p>
+                <p class="section-label">FAITH, LEARNING &amp; COMMUNITY</p>
 
-                <h1>Our Religious Activities</h1>
+                <h1>Our Activities &amp; Events</h1>
 
                 <p>
-                    Preserving the remembrance of Imam Hussain (A.S.),
-                    honouring the message of Karbala, and bringing the
-                    community together through faith and tradition.
+                    Discover the religious gatherings, commemorations,
+                    educational competitions, sports events, and community
+                    programs organized by Mehfil-e-Murtazvi, Nindo Shaher.
                 </p>
 
             </div>
-
         </section>
 
         <!-- Activities Content -->
         <section class="activities-page-content">
-
             <div class="container">
 
                 <div class="activities-introduction">
 
                     <p class="section-label">OUR COMMITMENT</p>
 
-                    <h2>Faith, Remembrance &amp; Unity</h2>
+                    <h2>Faith, Remembrance &amp; Community Spirit</h2>
 
                     <div class="gold-line centered"></div>
 
                     <p>
-                        Mehfil-e-Murtazvi, Nindo Shaher, has a longstanding
-                        tradition of religious gatherings and remembrance.
-                        Our activities reflect devotion to Imam Hussain
-                        (A.S.) and the enduring message of Karbala.
+                        Mehfil-e-Murtazvi brings people together through
+                        religious gatherings, remembrance, educational
+                        activities, sports, and community events. Explore
+                        each category to discover its programs and photographs.
                     </p>
 
                 </div>
 
                 <div class="activities-grid">
 
-                    <article class="activity-card">
+                    <!-- Activity 1 -->
+                    <a
+                        href="majalis-e-aza.html"
+                        class="activity-card"
+                        aria-label="Explore Majalis-e-Aza photographs and events"
+                    >
                         <span class="activity-number">01</span>
 
                         <h2>Majalis-e-Aza</h2>
@@ -220,55 +252,86 @@
                             of Karbala, and the lessons of sacrifice, truth,
                             patience, and justice.
                         </p>
-                    </article>
 
-                    <article class="activity-card">
+                        <span class="activity-card-link">
+                            Explore Gallery <span aria-hidden="true">&rarr;</span>
+                        </span>
+                    </a>
+
+                    <!-- Activity 2 -->
+                    <a
+                        href="muharram-commemorations.html"
+                        class="activity-card"
+                        aria-label="Explore Muharram commemorations and photographs"
+                    >
                         <span class="activity-number">02</span>
 
                         <h2>Muharram Commemorations</h2>
 
                         <p>
-                            Commemorative gatherings during Muharram that
-                            honour the sacrifice of Imam Hussain (A.S.) and
-                            preserve the religious traditions passed down
-                            through generations.
+                            Programs and gatherings held during Muharram
+                            to honour the sacrifice of Imam Hussain (A.S.)
+                            and preserve the traditions of remembrance
+                            passed down through generations.
                         </p>
-                    </article>
 
-                    <article class="activity-card">
+                        <span class="activity-card-link">
+                            Explore Gallery <span aria-hidden="true">&rarr;</span>
+                        </span>
+                    </a>
+
+                    <!-- Activity 3 -->
+                    <a
+                        href="milad-religious-programs.html"
+                        class="activity-card"
+                        aria-label="Explore Milad and religious program photographs"
+                    >
                         <span class="activity-number">03</span>
 
-                        <h2>Religious Gatherings</h2>
+                        <h2>Milad &amp; Religious Programs</h2>
 
                         <p>
-                            Gatherings that provide opportunities for the
-                            community to come together in remembrance,
-                            reflection, and the continuation of the
-                            traditions of Mehfil-e-Murtazvi.
+                            Milad gatherings, Naat programs, and other
+                            religious events that bring the community
+                            together in devotion, reflection, and
+                            the celebration of religious traditions.
                         </p>
-                    </article>
 
-                    <article class="activity-card">
+                        <span class="activity-card-link">
+                            Explore Gallery <span aria-hidden="true">&rarr;</span>
+                        </span>
+                    </a>
+
+                    <!-- Activity 4 -->
+                    <a
+                        href="community-events.html"
+                        class="activity-card"
+                        aria-label="Explore education, sports, and community event photographs"
+                    >
                         <span class="activity-number">04</span>
 
-                        <h2>Community Participation</h2>
+                        <h2>Education, Sports &amp; Community Events</h2>
 
                         <p>
-                            Encouraging community participation and
-                            intergenerational involvement to help preserve
-                            the heritage, values, and traditions of
-                            Mehfil-e-Murtazvi for the future.
+                            Student competitions, educational programs,
+                            sports and games, prize distributions, and
+                            other community events that encourage learning,
+                            participation, teamwork, and unity.
                         </p>
-                    </article>
+
+                        <span class="activity-card-link">
+                            Explore Gallery <span aria-hidden="true">&rarr;</span>
+                        </span>
+                    </a>
 
                 </div>
 
                 <div class="activities-note">
 
                     <p>
-                        This page will continue to grow with photographs
-                        and details of actual programs and gatherings
-                        organized by Mehfil-e-Murtazvi.
+                        Photographs and event details will be added to
+                        each gallery to document the programs organized
+                        by Mehfil-e-Murtazvi.
                     </p>
 
                     <div class="activities-back">
@@ -280,14 +343,12 @@
                 </div>
 
             </div>
-
         </section>
 
     </main>
 
     <!-- Website Footer -->
     <footer class="site-footer" id="contact">
-
         <div class="container footer-content">
 
             <div>
@@ -296,13 +357,17 @@
             </div>
 
             <p class="copyright">
-                &copy; 2026 Mehfil-e-Murtazvi. All rights reserved.
+                &copy; <span id="current-year">2026</span>
+                Mehfil-e-Murtazvi. All rights reserved.
             </p>
 
         </div>
-
     </footer>
 
-</body>
-  </html>
+    <script>
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
 
+</body>
+</html>
