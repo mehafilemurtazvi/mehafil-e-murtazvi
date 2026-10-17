@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,6 +74,12 @@
             border: 1px solid #e6ddc9;
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
         }
 
         .photo-card img {
@@ -88,6 +95,7 @@
             color: #174b37;
             font-weight: 600;
             line-height: 1.6;
+            text-align: center;
         }
 
         .gallery-note {
@@ -134,6 +142,16 @@
                 height: 250px;
             }
         }
+
+        @media (prefers-reduced-motion: reduce) {
+            .photo-card {
+                transition: none;
+            }
+
+            .photo-card:hover {
+                transform: none;
+            }
+        }
     </style>
 </head>
 
@@ -156,7 +174,7 @@
                 </span>
             </a>
 
-            <nav class="navigation">
+            <nav class="navigation" aria-label="Main navigation">
                 <a href="index.html#home">Home</a>
                 <a href="history.html">Our History</a>
                 <a href="activities.html" aria-current="page">Activities</a>
@@ -200,59 +218,123 @@
                     <div class="gold-line centered"></div>
 
                     <p>
-                        This gallery is dedicated to photographs of
-                        Majalis-e-Aza organized by Mehfil-e-Murtazvi,
-                        Nindo Shaher. Event photographs and details can
-                        be added here to preserve the history and
-                        memories of these gatherings.
+                        This gallery preserves photographs and memories
+                        of Majalis-e-Aza organized by Mehfil-e-Murtazvi,
+                        Nindo Shaher. These gatherings reflect a
+                        tradition of devotion, remembrance, and the
+                        enduring message of Karbala.
                     </p>
 
                 </div>
 
-                <!--
-                    Add your actual photographs to the repository's
-                    main folder and update the image filenames below.
-                -->
+                <!-- Majalis-e-Aza Photo Gallery -->
                 <div class="photo-gallery">
 
                     <article class="photo-card">
-                        <img
-                            src="majlis-aza-01.jpg"
-                            alt="Majalis-e-Aza gathering at Mehfil-e-Murtazvi"
-                            loading="lazy"
-                        >
-                        <div class="photo-caption">
-                            Majalis-e-Aza
-                        </div>
+                        <img src="majlis-aza-01.jpg" alt="Majalis-e-Aza photograph 1" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
                     </article>
 
                     <article class="photo-card">
-                        <img
-                            src="majlis-aza-02.jpg"
-                            alt="Religious gathering in remembrance of Imam Hussain"
-                            loading="lazy"
-                        >
-                        <div class="photo-caption">
-                            Remembrance of Karbala
-                        </div>
+                        <img src="majlis-aza-02.jpg" alt="Majalis-e-Aza photograph 2" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
                     </article>
 
                     <article class="photo-card">
-                        <img
-                            src="majlis-aza-03.jpg"
-                            alt="Community members attending a Majlis"
-                            loading="lazy"
-                        >
-                        <div class="photo-caption">
-                            Religious Gathering
-                        </div>
+                        <img src="majlis-aza-03.jpg" alt="Majalis-e-Aza photograph 3" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-04.jpg" alt="Majalis-e-Aza photograph 4" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-05.jpg" alt="Majalis-e-Aza photograph 5" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-06.jpg" alt="Majalis-e-Aza photograph 6" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-07.jpg" alt="Majalis-e-Aza photograph 7" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-08.jpg" alt="Majalis-e-Aza photograph 8" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-09.jpg" alt="Majalis-e-Aza photograph 9" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-10.jpg" alt="Majalis-e-Aza photograph 10" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-11.jpg" alt="Majalis-e-Aza photograph 11" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-12.jpg" alt="Majalis-e-Aza photograph 12" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-13.jpg" alt="Majalis-e-Aza photograph 13" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-14.jpg" alt="Majalis-e-Aza photograph 14" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-15.jpg" alt="Majalis-e-Aza photograph 15" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-16.jpg" alt="Majalis-e-Aza photograph 16" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-17.jpg" alt="Majalis-e-Aza photograph 17" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-18.jpg" alt="Majalis-e-Aza photograph 18" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-19.jpg" alt="Majalis-e-Aza photograph 19" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
+                    </article>
+
+                    <article class="photo-card">
+                        <img src="majlis-aza-20.jpg" alt="Majalis-e-Aza photograph 20" loading="lazy">
+                        <div class="photo-caption">Majalis-e-Aza</div>
                     </article>
 
                 </div>
 
                 <p class="gallery-note">
-                    More photographs and event details will be added
-                    as the collection grows.
+                    These photographs preserve the memories of
+                    Majalis-e-Aza at Mehfil-e-Murtazvi, Nindo Shaher.
                 </p>
 
                 <div class="gallery-navigation">
@@ -293,4 +375,4 @@
     </script>
 
 </body>
-  </html>
+</html>
